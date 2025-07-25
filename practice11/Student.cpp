@@ -38,5 +38,5 @@ void Student::PrintStudentInfo() {
     }
     cout << '\n';
     cout << "Кількість оцінок: " << grades_count << '\n';
-    cout << "Середня оцінка студента: " << (double)avgGrades(grades, grades_count);
+    cout << "Середня оцінка студента: " << avgGrades(grades, grades_count);
 }
