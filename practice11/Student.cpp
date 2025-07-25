@@ -23,7 +23,7 @@ void Student::SetGrades(const int* gradearr, int count) {
     }
 }
 double Student::avgGrades(const int* gradearr, int count) {
-    int sum = 0;
+    double sum = 0;
     for (int i = 0; i < count; i++) {
         sum += gradearr[i];
     }
@@ -38,5 +38,5 @@ void Student::PrintStudentInfo() {
     }
     cout << '\n';
     cout << "Кількість оцінок: " << grades_count << '\n';
-    cout << "Середня оцінка студента: " << avgGrades(grades, grades_count);
+    cout << "Середня оцінка студента: " << (double)avgGrades(grades, grades_count);
 }

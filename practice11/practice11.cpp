@@ -11,7 +11,6 @@ int main()
 
     {
         int size, grades_count;
-
         cout << "Введіть довжину імені студента (ураховуючи нуль-термінатор): ";
         cin >> size;
         char* name = new char[size];
@@ -26,15 +25,15 @@ int main()
         cout << "Введіть довжину списка оцінок: ";
         cin >> grades_count;
         int* grades = new int[grades_count];
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < grades_count; i++) {
             cout << "Введіть оцінку: ";
             cin >> grades[i];
         }
         
-        //Student student;
-        //student.SetName(name);
-        //student.SetGrades(grades, grades_count);
-        //student.PrintStudentInfo();
+        Student student;
+        student.SetName(name);
+        student.SetGrades(grades, grades_count);
+        student.PrintStudentInfo();
 
         
 
